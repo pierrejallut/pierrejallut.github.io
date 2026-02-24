@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     port: 8080,
   },
   devtools: { enabled: false },
-  ssr: false,
+  //ssr: false,
   modules: [
     "@nuxtjs/tailwindcss",
     "@primevue/nuxt-module",
