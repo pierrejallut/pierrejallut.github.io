@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text with Animated Line</title>
+  <style>
+    .animated-underline {
+      display: inline-block;
+      position: relative;
+      font-size: 24px;
+      padding-bottom: 10px;
+    }
+
+    .animated-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background: black;
+      transform-origin: left;
+      animation: slide-line 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes slide-line {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="animated-underline">Your Text Here</div>
+
+</body>
+</html>

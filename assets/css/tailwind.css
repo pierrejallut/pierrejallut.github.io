@@ -1,0 +1,89 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* import nunito sans */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+/* import spartan */
+@import url("https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic%7CSpartan:regular,500,600,700%7CNunito+Sans:300,300italic,regular,italic,600,600italic,700");
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
+
+@plugin "flowbite-typography";
+
+
+body {
+    /* @apply bg-gray-100; */
+}
+
+:root {
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+  --font-family-base: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --max-line-width: 65ch;
+  --color-text: #222;
+  --color-bg: #fff;
+  --spacing-unit: 1.5rem;
+}
+
+/*
+
+body {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  margin: 0;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+*/
+p {
+  margin-top: 0;
+  margin-bottom: var(--spacing-unit);
+} 
+
+/* ul, ol {
+  margin-top: 0;
+  margin-bottom: var(--spacing-unit);
+  padding-left: 2rem;
+} */
+
+/* a {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+} */
+
+
+.gradient-outline {
+    background: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: purple;
+    font-weight: bold !important;
+    border: 1px solid purple;
+}
+
+.gradient {
+    /* blue to purple */
+    background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%) !important;
+    /* border-radius: 8px; */
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold !important;
+    border: 1px solid white;
+}
