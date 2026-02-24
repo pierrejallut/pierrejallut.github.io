@@ -74,7 +74,8 @@ jobs:
         run: |
           export DEBUG=nuxt:*,nitro:*
           export NITRO_LOG_LEVEL=debug
-          export NODE_OPTIONS="--trace-uncaught"
+          export NODE_OPTIONS="--trace-uncaught --trace-warnings" npx nuxi generate
+          
           npx nuxi generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
