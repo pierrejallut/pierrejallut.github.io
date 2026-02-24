@@ -54,7 +54,7 @@ export default defineNuxtConfig({
       ]
     },
     // IMPORTANT: mets le nom exact du repo
-    // baseURL: '/pierrejallut.github.io/',
+    baseURL: '/pierrejallut.github.io/',
     // optionnel mais souvent utile pour éviter certains cas limites
     // buildAssetsDir: '/_nuxt/',
   }
