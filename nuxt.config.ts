@@ -8,20 +8,18 @@ export default defineNuxtConfig({
     port: 8080,
   },
   devtools: { enabled: false },
-  //ssr: false,
+  ssr: false,
   modules: [
     "@nuxtjs/tailwindcss",
     "@primevue/nuxt-module",
     "nuxt-vitalizer"
   ],
   nitro: {
-    preset: "github_pages",
-    prerender: {
-      // En SPA, tu peux carrément désactiver la liste auto si ça te casse le build
-      routes: ["/"],       // optionnel
-      crawlLinks: false,   // recommandé en SPA
-      failOnError: false,
-    },
+  prerender: {
+    crawlLinks: false,
+    routes: [],          // <- ne prerender rien
+    failOnError: false,
+  },
   },
   primevue: {
     options: {
