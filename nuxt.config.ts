@@ -14,6 +14,15 @@ export default defineNuxtConfig({
     "@primevue/nuxt-module",
     "nuxt-vitalizer"
   ],
+  nitro: {
+    preset: "github_pages",
+    prerender: {
+      // En SPA, tu peux carrément désactiver la liste auto si ça te casse le build
+      routes: ["/"],       // optionnel
+      crawlLinks: false,   // recommandé en SPA
+      failOnError: false,
+    },
+  },
   primevue: {
     options: {
       theme: {
