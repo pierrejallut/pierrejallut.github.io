@@ -14,7 +14,6 @@ export default defineNuxtConfig({
     "@primevue/nuxt-module",
     "nuxt-vitalizer"
   ],
-  nitro: {         prerender:{             failOnError:false,         }     },
   primevue: {
     options: {
       theme: {
