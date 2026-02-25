@@ -16,6 +16,12 @@
                         <Image :src="project.image" alt="Plateforme de facturation"
                             class="shadow-xl mt-4 mr-5 border-2 border-gray-200 w-full object-cover"
                             :class="project.class" preview />
+                        <div class="flex flex-wrap gap-4 mt-4">
+                            <template v-for="(image, idx) in project.otherImages" :key="idx">
+                                <Image :src="image" alt="Plateforme de facturation" class="shadow-xl border-2 border-gray-200 w-full object-cover 
+                                    max-w-[300px]" :class="project.class" preview />
+                            </template>
+                        </div>
                         <!-- <div class="border border-surface-200 dark:border-surface-700 rounded m-2  p-4">
                                     <div class="mb-4">
                                         <div class="relative mx-auto">
@@ -42,7 +48,7 @@ w-full h-100 object-cover" :class="project.class" preview />
                             class="w-full max-w-[200px] right-[0px] -top-[60px] mx-auto absolute"
                             :class="project.accentClass" /> -->
                     </div>
-                    <div class="flex flex-col gap-[40px] justify-center items-center lg:mr-4 relative">
+                    <div class="flex flex-col gap-[40px] justify-start items-start! lg:mr-4 relative">
 
                         <div>
                             <h2 class="text-sm font-serif mb-4">
@@ -71,6 +77,8 @@ w-full h-100 object-cover" :class="project.class" preview />
 <script setup lang="ts">
 
 const projects = useProjects();
+
+const selectedProject = ref<typeof projects[0] | null>(null);
 </script>
 
 <style scoped>

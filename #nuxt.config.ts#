@@ -8,19 +8,13 @@ export default defineNuxtConfig({
     port: 8080,
   },
   devtools: { enabled: false },
-  ssr: true,
+  ssr: false,
   modules: [
     "@nuxtjs/tailwindcss",
     "@primevue/nuxt-module",
     "nuxt-vitalizer"
   ],
-  nitro: {
-  prerender: {
-    crawlLinks: false,
-    routes: [],          // <- ne prerender rien
-    failOnError: false,
-  },
-  },
+  nitro: {         prerender:{             failOnError:false,         }     },
   primevue: {
     options: {
       theme: {
@@ -52,7 +46,7 @@ export default defineNuxtConfig({
       ]
     },
     // IMPORTANT: mets le nom exact du repo
-    baseURL: '/pierrejallut.github.io/',
+    // baseURL: '/pierrejallut.github.io/',
     // optionnel mais souvent utile pour éviter certains cas limites
     // buildAssetsDir: '/_nuxt/',
   }

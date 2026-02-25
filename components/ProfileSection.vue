@@ -54,13 +54,13 @@
                         <div class="flex flex-row gap-4">
                             <a href="#contact"
                                 class="p-button-primary gradient font-bold! text-xl drop-shadow-lg !border-[2px]">
-                                <i class="pi pi-envelope mr-2"></i>
+                                <!-- <i class="pi pi-envelope mr-2"></i> -->
                                 <span>Me contacter</span>
                             </a>
                             <a href="#projects"
                                 class="p-button-primary gradient-outline font-bold! flex items-center drop-shadow-lg !border-[2px]">
-                                <i class="pi pi-folder
-edin mr-2"></i>
+                                <!-- <i class="pi pi-folder
+edin mr-2"></i> -->
                                 <span>Mes projets</span>
                             </a>
                         </div>

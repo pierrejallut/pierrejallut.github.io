@@ -10,10 +10,10 @@
                 <p class="text-base !mb-2">
                     Passionné depuis l'enfance par l'informatique, j'ai commencé à coder à l'âge de 12 ans.
                 </p>
-                <p class="text-base !mb-2">
+                <!-- <p class="text-base !mb-2">
                     Je me suis ensuite vite dirigé vers des études qui m'ont permis de solidifier pendant 5 ans mes
                     compétences en développement à Epitech Paris, une école d'ingénieur en informatique.
-                </p>
+                </p> -->
                 <p class="text-base !mb-2">
                     Le développement pour moi est un medium qui me permet de résoudre des problèmes complexes (vos
                     problèmes, peut-être ?) et de créer des solutions
@@ -55,7 +55,7 @@
                      v-for="i in 20"
                     ></Skeleton> -->
 
-                <img src="/public/images/aboutme.png" alt="AI" class="w-[100%]" />
+                <img src="/images/aboutme_2.png" alt="AI" class="w-[100%]" />
             </div>
         </div>
     </section>

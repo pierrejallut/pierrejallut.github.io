@@ -1,5 +1,6 @@
 <template>
-    <Dialog v-model:visible="visible" modal header="Détail du projet" :style="{ width: '90%', maxWidth: '2000px' }">
+
+<Dialog v-model:visible="visible" modal header="Détail du projet" :style="{ width: '90%', maxWidth: '2000px' }">
         <div v-if="selectedProject">
             <img v-if="selectedProject.image" :src="selectedProject.image" :alt="selectedProject.title"
                 class="mb-4 w-full  object-cover rounded" />
@@ -14,7 +15,7 @@
     <div class="mx-auto">
         <!-- <Profile /> -->
         <ProfileSection />
-        <!-- <CarouselPortfolio /> -->
+        <CarouselPortfolio />
 
         <!-- <Divider></Divider> -->
         <AboutSection id="about" />
